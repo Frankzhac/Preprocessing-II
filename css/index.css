@@ -186,6 +186,26 @@ img {
   margin-right: 50px;
   padding-left: 20px;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navigation {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .navigation h1 {
+    margin-bottom: 10px;
+  }
+  .navigation nav a {
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 0;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -198,7 +218,8 @@ img {
   padding: 20px;
 }
 .home header {
-  border-top: 3px dashed silver;
+  border-top: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home header h2 {
   margin-top: 20px;
@@ -209,13 +230,29 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -228,6 +265,11 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
@@ -235,6 +277,11 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -244,11 +291,17 @@ img {
   display: inline-block;
   margin: 4px 2px;
   padding: 10px 27px;
+  width: 200px;
   text-align: center;
   border-radius: 8px;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #17A2B8;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+  }
 }
 .home .btn:hover {
   background-color: white;
@@ -260,7 +313,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
 }
